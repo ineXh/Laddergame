@@ -4,11 +4,13 @@ canvas{
     left: 0;
 }
 
+html {
+    height  : 100%;
+    overflow: hidden;
+}
 body {
-    /*background: #FFEB3B;/*yellow;*/
-  height: 100%;
-  width: 100%;
-  overflow: auto;
+    height  : 100%;
+    overflow: auto;
 }
 p {
 	background-color: #ffc6c6;
