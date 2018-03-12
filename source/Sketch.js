@@ -131,6 +131,7 @@ function loadStage(stageNum){
 }
 
 function touchStarted(){
+  character.throw(throwVx);
   //mouseClicked()
 }
 function mouseClicked() {

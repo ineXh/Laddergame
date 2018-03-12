@@ -51,6 +51,7 @@ Character.prototype.climbProcess = function(){
 Character.prototype.throw = function(vx){
 	// vx in m/sec, want px / frame
 	if(this.climbing) return;
+	if(timing) return;
 	vx = vx*pxPerMeter/fr;
 	//console.log('throw')
 	showScore = false;

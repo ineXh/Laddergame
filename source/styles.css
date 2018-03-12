@@ -6,6 +6,9 @@ canvas{
 
 body {
     /*background: #FFEB3B;/*yellow;*/
+  height: 100%;
+  width: 100%;
+  overflow: auto;
 }
 p {
 	background-color: #ffc6c6;
