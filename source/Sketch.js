@@ -9,12 +9,16 @@ function setup() {
   document.body.style.overflow = 'hidden';
 
   //createCanvas(window.innerWidth, window.innerHeight);
-  if(window.innerWidth >= window.innerHeight){
-    createCanvas(window.innerHeight, window.innerHeight);
+  if(window.innerWidth >= 800){
+    createCanvas(800, 600);
+  }else if(displayWidth >= displayHeight){
+    createCanvas(displayHeight, displayHeight);
   }else{
-    createCanvas(window.innerWidth, window.innerWidth);
+    createCanvas(displayWidth, displayWidth);
   }
+  //createCanvas(displayWidth, displayHeight);
   //createCanvas(800, 600);
+  //if(window.i)
   frameRate(fr);
 
   textAlign(CENTER);
