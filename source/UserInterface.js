@@ -62,8 +62,9 @@ UserInterface.prototype = {
 		prevStageButton = createButton('Prev Stage');
 		prevStageButton.position(x1, height*0.15);
 		prevStageButton.style('width', ''+ w);
-		prevStageButton.mousePressed(function(){
-			console.log('preStage')
+		prevStageButton.mousePressed(function(e){
+			e.preventDefault()
+			//console.log('preStage')
 			stage--;
 			if(stage <= 1) stage = 1;
 			stageDiv.elt.innerText = 'Stage: ' + stage
@@ -73,7 +74,8 @@ UserInterface.prototype = {
 		nextStageButton = createButton('Next Stage');
 		nextStageButton.position(x2, height*0.15);
 		nextStageButton.style('width', '' + w);
-		nextStageButton.mousePressed(function(){
+		nextStageButton.mousePressed(function(e){
+			e.preventDefault()
 			stage++;
 			if(stage > Object.keys(StageData).length) stage = 3;
 			stageDiv.elt.innerText = 'Stage: ' + stage
